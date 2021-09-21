@@ -25,8 +25,8 @@ $request_name = $_SERVER['QUERY_STRING'];
 $request_body = @json_decode($request_json, true);
 if($request_body == "" || $request_name == "") {
 	// if there is no decoded json body, return 400
-    header("X-Error-Reason: JSON missing or not parseable");
-   	http_response_code(400);
+	header("X-Error-Reason: JSON missing or not parseable");
+	http_response_code(400);
 	exit;
 }
 
