@@ -45,3 +45,18 @@ To trigger a request using curl, the following command can be used.
     	-d '{"soap_field": "value", "soap_field2": 1234}'
 
 If the SOAP location and namespace is configured in the script, the two related headers can be omitted.
+
+## Error handling
+
+If no request body is shown, use the "-v" option of curl to show the headers. The JSON-SOAP proxy script ujses http headers and the return code to indicate errors. The following example shows an error in the JSON-SOAP proxy.
+
+    < HTTP/1.1 400 Bad Request
+    < Date: Wed, 29 Sep 2021 09:15:08 GMT
+    < Server: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g
+    < X-Powered-By: PHP/7.2.24
+    < X-Error-Reason: JSON missing or not parseable
+    < Content-Length: 0
+    < Connection: close
+    < Content-Type: text/html; charset=UTF-8
+
+The return code 400 indicates the error of the JSON-SOAP proxy script itself. The http header "X-Error-Reason" shows a description of the error.
