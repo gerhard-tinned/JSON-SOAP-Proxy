@@ -13,7 +13,7 @@ There are two ways of configuring the script. Either the configuration is part o
 
 **ATTENTION:** The possibility to pass the configuration to the script via http headers can pose a security issue. 
 
-The following two configuration options can be found in the script.
+The following two configuration options can be found in the script. as an alternative, a configuration file named "config.inc.php" can be provided containing the configuration.
 
 * $conf_location
 * $conf_namespace

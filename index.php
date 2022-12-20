@@ -15,6 +15,10 @@
 // BEGIN CONFIGURATION
 $conf_location = "http://127.0.0.1:8081/soap";
 $conf_namespace = "http://127.0.0.1:8081/NAMESPACE/SOAP";
+# If a config file exists, load it
+if(file_exists('config.inc.php')) {
+    include_once 'config.inc.php';
+}
 // END CONFIGURATION
 
 // Reding the the Inpurt details
