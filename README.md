@@ -32,7 +32,7 @@ If both configuration variables are set to "" (empty string), the configuration 
 This script requires the **SOAP** and the **JSON** php modules to be installed. Please refer to the PHP website or the package repository for a description to install the required modules.
 
 * [SOAP](https://www.php.net/manual/en/book.soap.php)
-* [JSON](https://www.php.net/manual/de/ref.json.php)
+* [JSON](https://www.php.net/manual/en/ref.json.php)
 
 ## Examples
 
